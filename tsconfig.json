@@ -1,0 +1,31 @@
+{
+  "compilerOptions": {
+    // Type Checking
+    "allowUnreachableCode": false,
+    "allowUnusedLabels": false,
+    "noFallthroughCasesInSwitch": true,
+    "noImplicitOverride": true,
+    "noImplicitReturns": true,
+    "noPropertyAccessFromIndexSignature": true,
+    "noUnusedLocals": true,
+    "strict": true,
+
+    // Interop Constraints
+    "esModuleInterop": true,
+    "resolveJsonModule": true,
+    "forceConsistentCasingInFileNames": true,
+    "isolatedModules": true,
+
+    // Language and Environment
+    "experimentalDecorators": true,
+    "useDefineForClassFields": true,
+
+    // Output
+    "lib": ["es2020"],
+    "target": "es2020",
+    "module": "node16",
+    "moduleResolution": "node16",
+    "declaration": true,
+    "outDir": "build"
+  },
+}

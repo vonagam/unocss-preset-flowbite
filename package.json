@@ -1,0 +1,40 @@
+{
+  "name": "@vonagam/unocss-preset-flowbite",
+  "version": "0.0.1",
+  "description": "Flowbite preset for UnoCSS",
+  "author": "Dmitry Maganov <vonagam@gmail.com>",
+  "license": "MIT",
+  "repository": "vonagam/unocss-preset-flowbite",
+  "packageManager": "pnpm@8.7.5",
+  "type": "module",
+  "files": [
+    "build"
+  ],
+  "scripts": {
+    "build": "tsc"
+  },
+  "peerDependencies": {
+    "@unocss/core": ">= 0.55.0 0"
+  },
+  "dependencies": {
+    "mini-svg-data-uri": "^1.4.3"
+  },
+  "devDependencies": {
+    "@unocss/core": "^0.55.7",
+    "typescript": "^5.2.2"
+  },
+  "exports": {
+    ".": {
+      "types": "./src/index.mts",
+      "default": "./src/index.mts"
+    }
+  },
+  "publishConfig": {
+    "exports": {
+      ".": {
+        "types": "./build/index.d.ts",
+        "default": "./build/index.mjs"
+      }
+    }
+  }
+}
